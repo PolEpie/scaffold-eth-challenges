@@ -69,9 +69,8 @@ uint256 public constant threshold = 1 ether;
 
 > 👩‍💻 Write your `stake()` function and test it with the `Debug Contracts` tab in the frontend
 
-> 💸 Need more funds from the faucet?  Enter your frontend address into the wallet to get as much as you need!
-
-![image](https://user-images.githubusercontent.com/12072395/159039700-4a43fd2e-1961-471e-a399-ff8dd9b408be.png)
+💸 Need more funds from the faucet?  Enter your frontend address into the wallet to get as much as you need!
+![Wallet_Medium](https://user-images.githubusercontent.com/12072395/159990402-d5535875-f1eb-4c75-86a7-6fbd5e6cbe5f.png)
 
 #### 🥅 Goals
 
@@ -97,7 +96,7 @@ uint256 public deadline = block.timestamp + 30 seconds;
 
 If the `address(this).balance` of the contract is over the `threshold` by the `deadline`, you will want to call: ```exampleExternalContract.complete{value: address(this).balance}()```
 
-If the balance is less than the `threshold`, you want to set a `openForWithdraw` bool to `true` and allow users to `withdraw(address payable)` their funds.
+If the balance is less than the `threshold`, you want to set a `openForWithdraw` bool to `true` and allow users to `withdraw()` their funds.
 
 (You'll have 30 seconds after deploying until the deadline is reached, you can adjust this in the contract.)
 
@@ -112,7 +111,7 @@ If the balance is less than the `threshold`, you want to set a `openForWithdraw`
 #### 🥅 Goals
 - [ ] Can you see `timeLeft` counting down in the `Staker UI` tab when you trigger a transaction with the faucet?
 - [ ] If you `stake()` enough ETH before the `deadline`, does it call `complete()`?
-- [ ] If you don't `stake()` enough can you `withdraw(address payable)` your funds?
+- [ ] If you don't `stake()` enough can you `withdraw()` your funds?
 
 
 ---
