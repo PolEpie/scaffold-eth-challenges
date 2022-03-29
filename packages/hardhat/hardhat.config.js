@@ -25,7 +25,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "rinkeby";
 
 const mainnetGwei = 115;
 
@@ -255,7 +255,7 @@ module.exports = {
   },
   etherscan: {
     // Add your api key here
-    apiKey: "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW",
+    apiKey: "QS85KI1SVG61E1WACDUB7YR8FYTAG9G5TK",
   },
 };
 
